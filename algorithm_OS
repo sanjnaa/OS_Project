@@ -1,1 +1,24 @@
+1.	For First and Second Iteration.
+2.	For first iteration is timeQuantum =6 and for second Iteration timeQuantum =10.
+3.	For(i=0 to no of processes)
+	   If(arrivalTime < TimeDuration)
+		    If(burstTime > timeQuantam){
+			      Decrease burstTime by timeQuantum;
+		     }
+		   Else{
+			     TimeDuration += burstTime;
+			     CompilationTime = TimeDuration;
+			     TurnAroundTime = CompilationTime - arrivalTime;
+			     burstTime -= timeQuantum;
+           Add the process to the array []; //as to check whether this process is completed later.
+	  }
+
+4.	Sort remaining processes according to remaining burstTime.
+5.	Check for the process which is already completed.
+6.	For(remaining process)	{
+      TimeDuration += burstTime;
+      CompilationTime=timeDuration;
+      TurnAroundTime = CompilationTime - arrivalTime;
+}
+7.	Print all the process. And Average TurnAroundTime and Average Waiting Time.
 
